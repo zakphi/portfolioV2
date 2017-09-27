@@ -1,6 +1,8 @@
 $(() => {
   console.log('script loaded')
 
+  let about = ''
+
   siteSkeleton = () => {
     console.log('siteSkeleton')
     $('<main>').prependTo('body')
@@ -38,6 +40,14 @@ $(() => {
     }).appendTo('#top article')
   }
 
+  fetch('data/data.json')
+    .then(res => res.json())
+    .then(jsonRes => {
+      console.log(jsonRes)
+
+      about = jsonRes.about
+    })
+
   aboutSetup = () => {
     console.log('about btn clicked')
     $('#bottom article').remove()
@@ -45,8 +55,10 @@ $(() => {
     $('<article>').appendTo('#bottom')
 
     $('<h2>').appendTo('#bottom article')
+    $('h2').text('about')
 
     $('<p>').appendTo('#bottom article')
+    $('p').text(about.summary)
   }
 
   $(document).on('click', '#about', aboutSetup)
