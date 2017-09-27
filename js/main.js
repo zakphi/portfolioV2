@@ -51,6 +51,17 @@ $(() => {
 
   $(document).on('click', '#about', aboutSetup)
 
+  workSetup = () => {
+    console.log('work btn clicked')
+    $('#bottom article').remove()
+
+    $('<article>').appendTo('#bottom')
+
+    $('<h2>').appendTo('#bottom article')
+  }
+
+  $(document).on('click', '#work', workSetup)
+
   siteSkeleton()
   topSetup()
 })
