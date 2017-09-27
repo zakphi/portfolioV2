@@ -62,6 +62,17 @@ $(() => {
 
   $(document).on('click', '#work', workSetup)
 
+  socialSetup = () => {
+    console.log('social btn clicked')
+    $('#bottom article').remove()
+
+    $('<article>').appendTo('#bottom')
+
+    $('<h2>').appendTo('#bottom article')
+  }
+
+  $(document).on('click', '#social', socialSetup)
+
   siteSkeleton()
   topSetup()
 })
