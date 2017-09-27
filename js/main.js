@@ -38,6 +38,19 @@ $(() => {
     }).appendTo('#top article')
   }
 
+  aboutSetup = () => {
+    console.log('about btn clicked')
+    $('#bottom article').remove()
+
+    $('<article>').appendTo('#bottom')
+
+    $('<h2>').appendTo('#bottom article')
+
+    $('<p>').appendTo('#bottom article')
+  }
+
+  $(document).on('click', '#about', aboutSetup)
+
   siteSkeleton()
   topSetup()
 })
