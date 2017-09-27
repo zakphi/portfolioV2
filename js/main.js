@@ -2,6 +2,7 @@ $(() => {
   console.log('script loaded')
 
   let about = ''
+  let work = ''
 
   siteSkeleton = () => {
     console.log('siteSkeleton')
@@ -46,6 +47,7 @@ $(() => {
       console.log(jsonRes)
 
       about = jsonRes.about
+      work = jsonRes.work
     })
 
   aboutSetup = () => {
@@ -70,6 +72,30 @@ $(() => {
     $('<article>').appendTo('#bottom')
 
     $('<h2>').appendTo('#bottom article')
+    $('h2').text('work')
+
+    console.log(work)
+    $.each(work, (k, v) => {
+      console.log(v)
+
+      $('<h3>', {
+        'html': v.title
+      }).appendTo('#bottom article')
+
+      $('<p>', {
+        'html': v.summary
+      }).appendTo('#bottom article')
+
+      $('<a>', {
+        'href': v.live,
+        'html': 'live'
+      }).appendTo('#bottom article')
+
+      $('<a>', {
+        'href': v.github,
+        'html': 'github'
+      }).appendTo('#bottom article')
+    })
   }
 
   $(document).on('click', '#work', workSetup)

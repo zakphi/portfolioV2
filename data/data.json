@@ -1,5 +1,31 @@
 {
   "about": {
     "summary": "Passionate and dependable Web Developer with a strong customer service record and excellent work ethic. Strong ability to problem solve and knowledgeable in the principles and techniques of website development and maintenance. Able to convey technical information to a diverse customer base in a clear and understandable manner."
+  },
+  "work": {
+    "higherorlower": {
+      "title": "higher or lower",
+      "summary": "Higher or Lower is a simple card game where the user is displayed a card and has to choose whether the next card is higher or lower than the displayed card.",
+      "live": "https://zakphi.github.io/HigherOrLower/",
+      "github": "https://github.com/zakphi/HigherOrLower"
+    },
+    "chucknorrisfacts": {
+      "title": "chuck norris facts",
+      "summary": "Chuck Norris Facts is a simple app that will generate a random fact about Chuck Norris.",
+      "live": "https://chucknorrisfacts.herokuapp.com/",
+      "github": "https://github.com/zakphi/ChuckNorrisFacts"
+    },
+    "tvshowtrakr": {
+      "title": "tvshowtrakr",
+      "summary": "TVShowTrakr is a simple app for people to keep track of their favorite shows",
+      "live": "https://tvshowtrakr.herokuapp.com/",
+      "github": "https://github.com/zakphi/TVShowTrakr"
+    },
+    "bingetime": {
+      "title": "bingetime",
+      "summary": "BingeTime is a simple app that will allow people to search for a show and find out how long it will take to binge watch the show.",
+      "live": "https://bingetime.herokuapp.com/",
+      "github": "https://github.com/zakphi/BingeTime"
+    }
   }
 }
