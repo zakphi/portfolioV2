@@ -54,12 +54,14 @@ $(() => {
     console.log('about btn clicked')
     $('#bottom article').remove()
 
-    $('<article>').appendTo('#bottom')
+    $('<article>', {
+      'id': 'summary'
+    }).appendTo('#bottom')
 
-    $('<h2>').appendTo('#bottom article')
-    $('h2').text('about')
+    $('<h2>').appendTo('#bottom #summary')
+    $('#summary h2').text('about')
 
-    $('<p>').appendTo('#bottom article')
+    $('<p>').appendTo('#bottom #summary')
     $('p').text(about.summary)
   }
 
