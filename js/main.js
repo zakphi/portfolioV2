@@ -3,6 +3,7 @@ $(() => {
 
   let about = ''
   let work = ''
+  let skills = ''
 
   siteSkeleton = () => {
     console.log('siteSkeleton')
@@ -48,6 +49,7 @@ $(() => {
 
       about = jsonRes.about
       work = jsonRes.work
+      skills = jsonRes.skills
     })
 
   aboutSetup = () => {
@@ -63,6 +65,25 @@ $(() => {
 
     $('<p>').appendTo('#bottom #summary')
     $('p').text(about.summary)
+
+    $('<article>', {
+      'id': 'skills'
+    }).appendTo('#bottom')
+
+    $('<h2>').appendTo('#bottom #skills')
+    $('#skills h2').text('skills')
+
+    $.each(skills, (k, v) => {
+      console.log(k)
+      $('<h3>', {
+        'html': k
+      }).appendTo('#bottom #skills')
+
+      console.log(v)
+      $('<p>', {
+        'html': v
+      }).appendTo('#bottom #skills')
+    })
   }
 
   $(document).on('click', '#about', aboutSetup)

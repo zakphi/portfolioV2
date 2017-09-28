@@ -2,6 +2,26 @@
   "about": {
     "summary": "Passionate and dependable Web Developer with a strong customer service record and excellent work ethic. Strong ability to problem solve and knowledgeable in the principles and techniques of website development and maintenance. Able to convey technical information to a diverse customer base in a clear and understandable manner."
   },
+  "skills": {
+    "frontend": [
+      "HTML","CSS","JavaScript","jQuery","Bootstrap","React.js"
+    ],
+    "backend": [
+      "PHP","Node.js","Express.js","Ruby","Ruby on Rails","Sinatra"
+    ],
+    "cms": [
+      "WordPress"
+    ],
+    "databases": [
+      "SQL","MySQL","PostgreSQL"
+    ],
+    "design": [
+      "Photoshop", "Illustrator"
+    ],
+    "other": [
+      "Git", "GitHub"
+    ]
+  },
   "work": {
     "higherorlower": {
       "title": "higher or lower",
