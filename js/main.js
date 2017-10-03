@@ -177,22 +177,31 @@ $(() => {
     console.log(social)
 
     $('<p>', {
-      'html': $('<i>', {
-        'class': 'fa fa-envelope-o'
+      'html': $('<a>', {
+        'html': $('<i>', {
+          'class': 'fa fa-envelope-o'
+        }),
+        'href': `mailto:${social.email}`
       }),
       'id': 'email'
     }).appendTo('#bottom article')
 
     $('<p>', {
-      'html': $('<i>', {
-        'class': 'fa fa-github'
+      'html': $('<a>', {
+        'html': $('<i>', {
+          'class': 'fa fa-github'
+        }),
+        'href': social.github
       }),
       'id': 'github'
     }).appendTo('#bottom article')
 
     $('<p>', {
-      'html': $('<i>', {
-        'class': 'fa fa-linkedin'
+      'html': $('<a>', {
+        'html': $('<i>', {
+          'class': 'fa fa-linkedin'
+        }),
+        'href': social.linkedin
       }),
       'id': 'linkedin'
     }).appendTo('#bottom article')
