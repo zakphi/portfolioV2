@@ -177,17 +177,23 @@ $(() => {
     console.log(social)
 
     $('<p>', {
-      'html': social.email,
+      'html': $('<i>', {
+        'class': 'fa fa-envelope-o'
+      }),
       'id': 'email'
     }).appendTo('#bottom article')
 
     $('<p>', {
-      'html': social.github,
+      'html': $('<i>', {
+        'class': 'fa fa-github'
+      }),
       'id': 'github'
     }).appendTo('#bottom article')
 
     $('<p>', {
-      'html': social.linkedin,
+      'html': $('<i>', {
+        'class': 'fa fa-linkedin'
+      }),
       'id': 'linkedin'
     }).appendTo('#bottom article')
   }
