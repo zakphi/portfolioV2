@@ -29,6 +29,10 @@ $(() => {
       'html': 'web developer'
     }).appendTo('#top')
 
+    $('<p>', {
+      'html': 'click on a button to learn more about me'
+    }).appendTo('#top')
+
     $('<article>').appendTo('#top')
 
     $('<button>', {
