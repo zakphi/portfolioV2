@@ -27,25 +27,37 @@
       "title": "higher or lower",
       "summary": "Higher or Lower is a simple card game where the user is displayed a card and has to choose whether the next card is higher or lower than the displayed card.",
       "live": "https://zakphi.github.io/HigherOrLower/",
-      "github": "https://github.com/zakphi/HigherOrLower"
+      "github": "https://github.com/zakphi/HigherOrLower",
+      "tech": [
+        "CSS", "JavaScript", "jQuery"
+      ]
     },
     "chucknorrisfacts": {
       "title": "chuck norris facts",
       "summary": "Chuck Norris Facts is a simple app that will generate a random fact about Chuck Norris.",
       "live": "https://chucknorrisfacts.herokuapp.com/",
-      "github": "https://github.com/zakphi/ChuckNorrisFacts"
+      "github": "https://github.com/zakphi/ChuckNorrisFacts",
+      "tech": [
+        "CSS", "JavaScript", "jQuery", "Express", "PostgreSQL"
+      ]
     },
     "tvshowtrakr": {
       "title": "tvshowtrakr",
       "summary": "TVShowTrakr is a simple app for people to keep track of their favorite shows",
       "live": "https://tvshowtrakr.herokuapp.com/",
-      "github": "https://github.com/zakphi/TVShowTrakr"
+      "github": "https://github.com/zakphi/TVShowTrakr",
+      "tech": [
+        "CSS", "React", "Express", "PostgreSQL"
+      ]
     },
     "bingetime": {
       "title": "bingetime",
       "summary": "BingeTime is a simple app that will allow people to search for a show and find out how long it will take to binge watch the show.",
       "live": "https://bingetime.herokuapp.com/",
-      "github": "https://github.com/zakphi/BingeTime"
+      "github": "https://github.com/zakphi/BingeTime",
+      "tech": [
+        "CSS", "React", "Ruby on Rails", "PostgreSQL"
+      ]
     }
   },
   "social": {

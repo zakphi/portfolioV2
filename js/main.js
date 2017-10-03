@@ -115,6 +115,11 @@ $(() => {
         'html': v.summary
       }).appendTo('#bottom article')
 
+      console.log(v.tech)
+      $('<p>', {
+        'html': `tech: ${v.tech.map(t => t).join(', ')}`
+      }).appendTo('#bottom article')
+
       $('<a>', {
         'href': v.live,
         'html': 'live'
