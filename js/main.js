@@ -111,28 +111,36 @@ $(() => {
     $.each(work, (k, v) => {
       console.log(v)
 
+      $('<div>', {
+        'id': k
+      }).appendTo('#bottom article')
+
       $('<h3>', {
         'html': v.title
-      }).appendTo('#bottom article')
+      }).appendTo(`#bottom article #${k}`)
 
       $('<p>', {
         'html': v.summary
-      }).appendTo('#bottom article')
+      }).appendTo(`#bottom article #${k}`)
 
       console.log(v.tech)
       $('<p>', {
         'html': `tech: ${v.tech.map(t => t).join(', ')}`
-      }).appendTo('#bottom article')
+      }).appendTo(`#bottom article #${k}`)
+
+      $('<span>', {
+        'id': 'links'
+      }).appendTo(`#bottom article #${k}`)
 
       $('<a>', {
         'href': v.live,
         'html': 'live'
-      }).appendTo('#bottom article')
+      }).appendTo(`#bottom article #${k} #links`)
 
       $('<a>', {
         'href': v.github,
         'html': 'github'
-      }).appendTo('#bottom article')
+      }).appendTo(`#bottom article #${k} #links`)
     })
   }
 
