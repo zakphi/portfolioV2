@@ -24,3 +24,15 @@ main{
   margin: 0 auto;
   text-align: center;
 }
+
+#skillsCont{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: center;
+}
+
+#skillsCont div{
+  width: 33%;
+  margin-bottom: 10px;
+}
