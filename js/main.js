@@ -80,14 +80,18 @@ $(() => {
 
     $.each(skills, (k, v) => {
       console.log(k)
-      $('<h3>', {
-        'html': k
+      $('<div>', {
+        'id': k
       }).appendTo('#bottom #skills')
 
+      $('<h3>', {
+        'html': k
+      }).appendTo(`#bottom #skills #${k}`)
+
       console.log(v)
-      $('<p>', {
-        'html': v
-      }).appendTo('#bottom #skills')
+      $('<ul>', {
+        'html': v.map(v => $('<li>', {'html': v} ) )
+      }).appendTo(`#bottom #skills #${k}`)
     })
   }
 
