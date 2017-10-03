@@ -131,8 +131,19 @@ $(() => {
       }).appendTo(`#bottom article #${k}`)
 
       console.log(v.tech)
-      $('<p>', {
-        'html': `tech: ${v.tech.map(t => t).join(', ')}`
+      $('<h4>', {
+        'html': 'tech'
+      }).appendTo(`#bottom article #${k}`)
+
+      $('<ul>', {
+        'html': v.tech.map(v => {
+          return $('<li>', {
+            'html': $('<i>', {
+              'html': v,
+              'class': v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
+            })
+          })
+        })
       }).appendTo(`#bottom article #${k}`)
 
       $('<span>', {

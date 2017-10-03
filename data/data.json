@@ -29,7 +29,7 @@
       "live": "https://zakphi.github.io/HigherOrLower/",
       "github": "https://github.com/zakphi/HigherOrLower",
       "tech": [
-        "CSS", "JavaScript", "jQuery"
+        "css3", "javascript", "jquery"
       ]
     },
     "chucknorrisfacts": {
@@ -38,7 +38,7 @@
       "live": "https://chucknorrisfacts.herokuapp.com/",
       "github": "https://github.com/zakphi/ChuckNorrisFacts",
       "tech": [
-        "CSS", "JavaScript", "jQuery", "Express", "PostgreSQL"
+        "css3", "javascript", "jquery", "express", "postgresql"
       ]
     },
     "tvshowtrakr": {
@@ -47,7 +47,7 @@
       "live": "https://tvshowtrakr.herokuapp.com/",
       "github": "https://github.com/zakphi/TVShowTrakr",
       "tech": [
-        "CSS", "React", "Express", "PostgreSQL"
+        "css3", "react", "express", "postgresql"
       ]
     },
     "bingetime": {
@@ -56,7 +56,7 @@
       "live": "https://bingetime.herokuapp.com/",
       "github": "https://github.com/zakphi/BingeTime",
       "tech": [
-        "CSS", "React", "Ruby on Rails", "PostgreSQL"
+        "css3", "react", "rails", "postgresql"
       ]
     }
   },
