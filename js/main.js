@@ -99,8 +99,9 @@ $(() => {
       console.log(v)
       $('<ul>', {
         'html': v.map(v => {
+          let iconClass = v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
           return $('<li>', {
-            'html': `${`<i class='${v} == express ? devicon-${v}-original : devicon-${v}-plain'></i>`} ${v}`
+            'html': `${`<i class=${iconClass}></i>`} ${v}`
           })
         })
       }).appendTo(`#bottom #skills #${k}`)
@@ -142,8 +143,9 @@ $(() => {
 
       $('<ul>', {
         'html': v.tech.map(v => {
+          let iconClass = v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
           return $('<li>', {
-            'html': `${`<i class='${v} == express ? devicon-${v}-original : devicon-${v}-plain'></i>`} ${v}`
+            'html': `${`<i class=${iconClass}></i>`} ${v}`
           })
         })
       }).appendTo(`#bottom article #${k}`)
