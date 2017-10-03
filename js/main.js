@@ -86,15 +86,19 @@ $(() => {
       'html': 'skills'
     }).appendTo('#bottom #skills')
 
+    $('<div>', {
+      'id': 'skillsCont'
+    }).appendTo('#bottom #skills')
+
     $.each(skills, (k, v) => {
       console.log(k)
       $('<div>', {
         'id': k
-      }).appendTo('#bottom #skills')
+      }).appendTo('#bottom #skillsCont')
 
       $('<h3>', {
         'html': k
-      }).appendTo(`#bottom #skills #${k}`)
+      }).appendTo(`#bottom #skillsCont #${k}`)
 
       console.log(v)
       $('<ul>', {
@@ -104,7 +108,7 @@ $(() => {
             'html': `${`<i class=${iconClass}></i>`} ${v}`
           })
         })
-      }).appendTo(`#bottom #skills #${k}`)
+      }).appendTo(`#bottom #skillsCont #${k}`)
     })
   }
 
