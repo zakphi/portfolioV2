@@ -4,22 +4,22 @@
   },
   "skills": {
     "frontend": [
-      "HTML","CSS","JavaScript","jQuery","Bootstrap","React.js"
+      "html5","css3","javascript","jquery","bootstrap","react"
     ],
     "backend": [
-      "PHP","Node.js","Express.js","Ruby","Ruby on Rails","Sinatra"
+      "php","nodejs","express","ruby","rails"
     ],
     "cms": [
-      "WordPress"
+      "wordpress"
     ],
     "databases": [
-      "SQL","MySQL","PostgreSQL"
+      "mysql","postgresql"
     ],
     "design": [
-      "Photoshop", "Illustrator"
+      "photoshop", "illustrator"
     ],
     "other": [
-      "Git", "GitHub"
+      "git", "github"
     ]
   },
   "work": {

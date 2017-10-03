@@ -90,7 +90,14 @@ $(() => {
 
       console.log(v)
       $('<ul>', {
-        'html': v.map(v => $('<li>', {'html': v} ) )
+        'html': v.map(v => {
+          return $('<li>', {
+            'html': $('<i>', {
+              'html': v,
+              'class': v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
+            })
+          })
+        })
       }).appendTo(`#bottom #skills #${k}`)
     })
   }
