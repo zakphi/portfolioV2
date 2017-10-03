@@ -7,3 +7,14 @@ body{
 a{
   color: #808080;
 }
+
+button{
+  border: 2px solid #808080;
+  background-color: transparent;
+  color: #808080;
+  font-family: 'VT323', monospace;
+}
+
+button:focus{
+  outline: none;
+}
