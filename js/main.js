@@ -62,18 +62,21 @@ $(() => {
       'id': 'summary'
     }).appendTo('#bottom')
 
-    $('<h2>').appendTo('#bottom #summary')
-    $('#summary h2').text('about')
+    $('<h2>', {
+      'html': 'about'
+    }).appendTo('#bottom #summary')
 
-    $('<p>').appendTo('#bottom #summary')
-    $('p').text(about.summary)
+    $('<p>', {
+      'html': about.summary
+    }).appendTo('#bottom #summary')
 
     $('<article>', {
       'id': 'skills'
     }).appendTo('#bottom')
 
-    $('<h2>').appendTo('#bottom #skills')
-    $('#skills h2').text('skills')
+    $('<h2>', {
+      'html': 'skills'
+    }).appendTo('#bottom #skills')
 
     $.each(skills, (k, v) => {
       console.log(k)
@@ -96,8 +99,9 @@ $(() => {
 
     $('<article>').appendTo('#bottom')
 
-    $('<h2>').appendTo('#bottom article')
-    $('h2').text('work')
+    $('<h2>', {
+      'html': 'work'
+    }).appendTo('#bottom article')
 
     console.log(work)
     $.each(work, (k, v) => {
