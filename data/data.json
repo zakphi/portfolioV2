@@ -47,5 +47,10 @@
       "live": "https://bingetime.herokuapp.com/",
       "github": "https://github.com/zakphi/BingeTime"
     }
+  },
+  "social": {
+    "email": "philipkzak@gmail.com",
+    "github": "https://github.com/zakphi",
+    "linkedin": "https://www.linkedin.com/in/philipkzak"
   }
 }

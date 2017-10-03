@@ -4,6 +4,7 @@ $(() => {
   let about = ''
   let work = ''
   let skills = ''
+  let social = ''
 
   siteSkeleton = () => {
     console.log('siteSkeleton')
@@ -50,6 +51,7 @@ $(() => {
       about = jsonRes.about
       work = jsonRes.work
       skills = jsonRes.skills
+      social = jsonRes.social
     })
 
   aboutSetup = () => {
@@ -129,7 +131,26 @@ $(() => {
 
     $('<article>').appendTo('#bottom')
 
-    $('<h2>').appendTo('#bottom article')
+    $('<h2>', {
+      'html': 'social'
+    }).appendTo('#bottom article')
+
+    console.log(social)
+
+    $('<p>', {
+      'html': social.email,
+      'id': 'email'
+    }).appendTo('#bottom article')
+
+    $('<p>', {
+      'html': social.github,
+      'id': 'github'
+    }).appendTo('#bottom article')
+
+    $('<p>', {
+      'html': social.linkedin,
+      'id': 'linkedin'
+    }).appendTo('#bottom article')
   }
 
   $(document).on('click', '#social', socialSetup)
