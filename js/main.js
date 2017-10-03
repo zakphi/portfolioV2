@@ -21,9 +21,13 @@ $(() => {
 
   topSetup = () => {
     console.log('contentSetup')
-    $('<h1>').appendTo('#top')
+    $('<h1>', {
+      'html': 'philip zak'
+    }).appendTo('#top')
 
-    $('<h3>').appendTo('#top')
+    $('<h3>', {
+      'html': 'web developer'
+    }).appendTo('#top')
 
     $('<article>').appendTo('#top')
 
