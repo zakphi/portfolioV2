@@ -13,6 +13,8 @@ button{
   background-color: transparent;
   color: #808080;
   font-family: 'VT323', monospace;
+  font-size: 1.25em;
+  margin-right: 10px;
 }
 
 button:focus{
