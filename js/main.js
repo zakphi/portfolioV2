@@ -194,6 +194,10 @@ $(() => {
       'html': 'social'
     }).appendTo('#bottom #social')
 
+    $('<div>', {
+      'id': 'socialCont'
+    }).appendTo('#bottom #social')
+
     console.log(social)
 
     $('<p>', {
@@ -204,7 +208,7 @@ $(() => {
         'href': `mailto:${social.email}`
       }),
       'id': 'email'
-    }).appendTo('#bottom #social')
+    }).appendTo('#bottom #social #socialCont')
 
     $('<p>', {
       'html': $('<a>', {
@@ -214,7 +218,7 @@ $(() => {
         'href': social.github
       }),
       'id': 'github'
-    }).appendTo('#bottom #social')
+    }).appendTo('#bottom #social #socialCont')
 
     $('<p>', {
       'html': $('<a>', {
@@ -224,7 +228,7 @@ $(() => {
         'href': social.linkedin
       }),
       'id': 'linkedin'
-    }).appendTo('#bottom #social')
+    }).appendTo('#bottom #social #socialCont')
   }
 
   $(document).on('click', '#social', socialSetup)
