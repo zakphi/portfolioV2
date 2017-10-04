@@ -89,12 +89,12 @@ p{
   width: 50%;
 }
 
-#techCont{
+#workCont #techCont{
   display: flex;
   flex-direction: column;
 }
 
-#techCont ul{
+#workCont #techCont ul{
   display: flex;
   justify-content: space-around;
 }
@@ -115,5 +115,22 @@ p{
 
   #skillsCont div{
     align-items: center;
+  }
+
+  #workCont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #workCont div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  #workCont #techCont{
+    width: 100%;
   }
 }
