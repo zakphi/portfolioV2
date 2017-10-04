@@ -41,6 +41,10 @@ main{
   flex-direction: column;
 }
 
+#skillsCont li{
+  padding: 5px 0;
+}
+
 #skillsCont div h4, #skillsCont div ul{
   width: 100%;
 }
