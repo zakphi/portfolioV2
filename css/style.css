@@ -104,6 +104,10 @@ p{
   justify-content: space-around;
 }
 
+#socialCont a{
+  font-size: 1.5em;
+}
+
 @media screen and (min-width: 768px) {
   #skillsCont div h4, #skillsCont div ul{
     width: 50%;
