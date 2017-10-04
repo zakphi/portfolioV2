@@ -61,6 +61,18 @@ h4{
   margin-bottom: 5px;
 }
 
+#top p{
+  margin: 10px 0;
+}
+
+p{
+  font-size: 1.25em
+}
+
+#summary p{
+  text-align: left;
+}
+
 @media screen and (min-width: 768px) {
   #skillsCont div h4, #skillsCont div ul{
     width: 50%;
