@@ -134,20 +134,20 @@ $(() => {
 
       $('<div>', {
         'id': k
-      }).appendTo('#bottom article')
+      }).appendTo('#bottom #workCont')
 
       $('<h4>', {
         'html': v.title
-      }).appendTo(`#bottom article #${k}`)
+      }).appendTo(`#bottom #workCont #${k}`)
 
       $('<p>', {
         'html': v.summary
-      }).appendTo(`#bottom article #${k}`)
+      }).appendTo(`#bottom #workCont #${k}`)
 
       console.log(v.tech)
       $('<h4>', {
         'html': 'tech'
-      }).appendTo(`#bottom article #${k}`)
+      }).appendTo(`#bottom #workCont #${k}`)
 
       $('<ul>', {
         'html': v.tech.map(v => {
@@ -156,21 +156,21 @@ $(() => {
             'html': `${`<i class=${iconClass}></i>`} ${v}`
           })
         })
-      }).appendTo(`#bottom article #${k}`)
+      }).appendTo(`#bottom #workCont #${k}`)
 
       $('<span>', {
         'id': 'links'
-      }).appendTo(`#bottom article #${k}`)
+      }).appendTo(`#bottom #workCont #${k}`)
 
       $('<a>', {
         'href': v.live,
         'html': 'live'
-      }).appendTo(`#bottom article #${k} #links`)
+      }).appendTo(`#bottom #workCont #${k} #links`)
 
       $('<a>', {
         'href': v.github,
         'html': 'github'
-      }).appendTo(`#bottom article #${k} #links`)
+      }).appendTo(`#bottom #workCont #${k} #links`)
     })
   }
 
