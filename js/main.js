@@ -25,7 +25,7 @@ $(() => {
       'html': 'philip zak'
     }).appendTo('#top')
 
-    $('<h3>', {
+    $('<h2>', {
       'html': 'web developer'
     }).appendTo('#top')
 
