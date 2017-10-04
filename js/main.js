@@ -145,9 +145,13 @@ $(() => {
       }).appendTo(`#bottom #workCont #${k}`)
 
       console.log(v.tech)
+      $('<div>', {
+        'id': 'techCont'
+      }).appendTo(`#bottom #workCont #${k}`)
+
       $('<h4>', {
         'html': 'tech'
-      }).appendTo(`#bottom #workCont #${k}`)
+      }).appendTo(`#bottom #workCont #${k} #techCont`)
 
       $('<ul>', {
         'html': v.tech.map(v => {
@@ -156,11 +160,11 @@ $(() => {
             'html': `${`<i class=${iconClass}></i>`} ${v}`
           })
         })
-      }).appendTo(`#bottom #workCont #${k}`)
+      }).appendTo(`#bottom #workCont #${k} #techCont`)
 
       $('<span>', {
         'id': 'links'
-      }).appendTo(`#bottom #workCont #${k}`)
+      }).appendTo(`#bottom #workCont #${k} #techCont`)
 
       $('<a>', {
         'href': v.live,
