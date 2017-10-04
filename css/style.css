@@ -69,7 +69,7 @@ p{
   font-size: 1.25em
 }
 
-#summary p{
+#summary p, #workCont p{
   text-align: left;
 }
 
