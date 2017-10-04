@@ -118,15 +118,17 @@ $(() => {
     console.log('work btn clicked')
     $('#bottom article').remove()
 
-    $('<article>').appendTo('#bottom')
+    $('<article>', {
+      'id': 'work'
+    }).appendTo('#bottom')
 
     $('<h3>', {
       'html': 'work'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #work')
 
     $('<div>', {
       'id': 'workCont'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #work')
 
     console.log(work)
     $.each(work, (k, v) => {
