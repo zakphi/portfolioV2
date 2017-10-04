@@ -87,6 +87,16 @@ p{
   width: 50%;
 }
 
+#techCont{
+  display: flex;
+  flex-direction: column;
+}
+
+#techCont ul{
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (min-width: 768px) {
   #skillsCont div h4, #skillsCont div ul{
     width: 50%;
