@@ -1,13 +1,10 @@
 $(() => {
-  console.log('script loaded')
-
   let about = ''
   let work = ''
   let skills = ''
   let social = ''
 
   siteSkeleton = () => {
-    console.log('siteSkeleton')
     $('<main>').prependTo('body')
 
     $('<section>', {
@@ -20,7 +17,6 @@ $(() => {
   }
 
   topSetup = () => {
-    console.log('contentSetup')
     $('<h1>', {
       'html': 'philip zak'
     }).appendTo('#top')
@@ -54,8 +50,6 @@ $(() => {
   fetch('data/data.json')
     .then(res => res.json())
     .then(jsonRes => {
-      console.log(jsonRes)
-
       about = jsonRes.about
       work = jsonRes.work
       skills = jsonRes.skills
@@ -63,7 +57,6 @@ $(() => {
     })
 
   aboutSetup = () => {
-    console.log('about btn clicked')
     $('#bottom article').remove()
 
     $('<article>', {
@@ -91,7 +84,6 @@ $(() => {
     }).appendTo('#bottom #skills')
 
     $.each(skills, (k, v) => {
-      console.log(k)
       $('<div>', {
         'id': k
       }).appendTo('#bottom #skillsCont')
@@ -100,7 +92,6 @@ $(() => {
         'html': k
       }).appendTo(`#bottom #skillsCont #${k}`)
 
-      console.log(v)
       $('<ul>', {
         'html': v.map(v => {
           let iconClass = v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
@@ -115,7 +106,6 @@ $(() => {
   $(document).on('click', '#about', aboutSetup)
 
   workSetup = () => {
-    console.log('work btn clicked')
     $('#bottom article').remove()
 
     $('<article>', {
@@ -130,10 +120,7 @@ $(() => {
       'id': 'workCont'
     }).appendTo('#bottom #work')
 
-    console.log(work)
     $.each(work, (k, v) => {
-      console.log(v)
-
       $('<div>', {
         'id': k
       }).appendTo('#bottom #workCont')
@@ -146,7 +133,6 @@ $(() => {
         'html': v.summary
       }).appendTo(`#bottom #workCont #${k}`)
 
-      console.log(v.tech)
       $('<div>', {
         'id': 'techCont'
       }).appendTo(`#bottom #workCont #${k}`)
@@ -183,7 +169,6 @@ $(() => {
   $(document).on('click', '#work', workSetup)
 
   socialSetup = () => {
-    console.log('social btn clicked')
     $('#bottom article').remove()
 
     $('<article>', {
@@ -197,8 +182,6 @@ $(() => {
     $('<div>', {
       'id': 'socialCont'
     }).appendTo('#bottom #social')
-
-    console.log(social)
 
     $('<p>', {
       'html': $('<a>', {
