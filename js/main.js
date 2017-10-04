@@ -124,6 +124,10 @@ $(() => {
       'html': 'work'
     }).appendTo('#bottom article')
 
+    $('<div>', {
+      'id': 'workCont'
+    }).appendTo('#bottom article')
+
     console.log(work)
     $.each(work, (k, v) => {
       console.log(v)
