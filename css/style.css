@@ -77,6 +77,16 @@ p{
   margin-top: 5px;
 }
 
+#links{
+  display: block;
+  margin: 10px 0;
+}
+
+#links a{
+  display: inline-block;
+  width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   #skillsCont div h4, #skillsCont div ul{
     width: 50%;
