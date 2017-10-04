@@ -96,7 +96,7 @@ $(() => {
         'id': k
       }).appendTo('#bottom #skillsCont')
 
-      $('<h3>', {
+      $('<h4>', {
         'html': k
       }).appendTo(`#bottom #skillsCont #${k}`)
 
