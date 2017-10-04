@@ -35,4 +35,18 @@ main{
 #skillsCont div{
   width: 33%;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#skillsCont div h3, #skillsCont div ul{
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #skillsCont div h3, #skillsCont div ul{
+    width: 50%;
+  }
 }
