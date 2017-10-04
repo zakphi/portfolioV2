@@ -70,7 +70,7 @@ $(() => {
       'id': 'summary'
     }).appendTo('#bottom')
 
-    $('<h2>', {
+    $('<h3>', {
       'html': 'about'
     }).appendTo('#bottom #summary')
 
@@ -82,7 +82,7 @@ $(() => {
       'id': 'skills'
     }).appendTo('#bottom')
 
-    $('<h2>', {
+    $('<h3>', {
       'html': 'skills'
     }).appendTo('#bottom #skills')
 
@@ -120,7 +120,7 @@ $(() => {
 
     $('<article>').appendTo('#bottom')
 
-    $('<h2>', {
+    $('<h3>', {
       'html': 'work'
     }).appendTo('#bottom article')
 
@@ -178,7 +178,7 @@ $(() => {
 
     $('<article>').appendTo('#bottom')
 
-    $('<h2>', {
+    $('<h3>', {
       'html': 'social'
     }).appendTo('#bottom article')
 
