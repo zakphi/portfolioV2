@@ -186,11 +186,13 @@ $(() => {
     console.log('social btn clicked')
     $('#bottom article').remove()
 
-    $('<article>').appendTo('#bottom')
+    $('<article>', {
+      'id': 'social'
+    }).appendTo('#bottom')
 
     $('<h3>', {
       'html': 'social'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #social')
 
     console.log(social)
 
@@ -202,7 +204,7 @@ $(() => {
         'href': `mailto:${social.email}`
       }),
       'id': 'email'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #social')
 
     $('<p>', {
       'html': $('<a>', {
@@ -212,7 +214,7 @@ $(() => {
         'href': social.github
       }),
       'id': 'github'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #social')
 
     $('<p>', {
       'html': $('<a>', {
@@ -222,7 +224,7 @@ $(() => {
         'href': social.linkedin
       }),
       'id': 'linkedin'
-    }).appendTo('#bottom article')
+    }).appendTo('#bottom #social')
   }
 
   $(document).on('click', '#social', socialSetup)
