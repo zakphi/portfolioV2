@@ -43,7 +43,7 @@
     },
     "tvshowtrakr": {
       "title": "tvshowtrakr",
-      "summary": "TVShowTrakr is a simple app for people to keep track of their favorite shows",
+      "summary": "TVShowTrakr is a simple app for people to keep track of their favorite shows.",
       "live": "https://tvshowtrakr.herokuapp.com/",
       "github": "https://github.com/zakphi/TVShowTrakr",
       "tech": [
