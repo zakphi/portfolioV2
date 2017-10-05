@@ -26,7 +26,7 @@ $(() => {
     }).appendTo('#top')
 
     $('<p>', {
-      'html': 'click on a button to learn more about me'
+      'html': 'click below for more information'
     }).appendTo('#top')
 
     $('<article>').appendTo('#top')
