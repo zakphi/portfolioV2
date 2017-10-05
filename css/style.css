@@ -92,6 +92,7 @@ p{
 #links a{
   display: inline-block;
   width: 50%;
+  font-size: 1.15em;
 }
 
 #workCont #techCont{
