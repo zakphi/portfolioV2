@@ -105,6 +105,10 @@ p{
   justify-content: space-around;
 }
 
+#workCont #techCont li{
+  font-size: 1.15em;
+}
+
 #socialCont{
   display: flex;
   justify-content: space-around;
