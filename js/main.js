@@ -156,12 +156,14 @@ $(() => {
 
       $('<a>', {
         'href': v.live,
-        'html': 'live'
+        'html': 'live',
+        'target': '_blank'
       }).appendTo(`#bottom #workCont #${k} #links`)
 
       $('<a>', {
         'href': v.github,
-        'html': 'github'
+        'html': 'github',
+        'target': '_blank'
       }).appendTo(`#bottom #workCont #${k} #links`)
     })
   }
@@ -198,7 +200,8 @@ $(() => {
         'html': $('<i>', {
           'class': 'fa fa-github'
         }),
-        'href': social.github
+        'href': social.github,
+        'target': '_blank'
       }),
       'id': 'github'
     }).appendTo('#bottom #social #socialCont')
@@ -208,7 +211,8 @@ $(() => {
         'html': $('<i>', {
           'class': 'fa fa-linkedin'
         }),
-        'href': social.linkedin
+        'href': social.linkedin,
+        'target': '_blank'
       }),
       'id': 'linkedin'
     }).appendTo('#bottom #social #socialCont')
