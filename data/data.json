@@ -26,7 +26,7 @@
     "higherorlower": {
       "title": "higher or lower",
       "summary": "Higher or Lower is a simple card game where the user is displayed a card and has to choose whether the next card is higher or lower than the displayed card.",
-      "live": "https://zakphi.github.io/HigherOrLower/",
+      "live": "http://higherorlower.surge.sh/",
       "github": "https://github.com/zakphi/HigherOrLower",
       "tech": [
         "css3", "javascript", "jquery"
