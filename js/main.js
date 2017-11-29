@@ -47,7 +47,7 @@ $(() => {
     }).appendTo('#top article')
   }
 
-  fetch('data/data.json')
+  fetch('files/data.json')
     .then(res => res.json())
     .then(jsonRes => {
       about = jsonRes.about
@@ -69,6 +69,11 @@ $(() => {
 
     $('<p>', {
       'html': about.summary
+    }).appendTo('#bottom #summary')
+
+    $('<a>', {
+      'href': about.resume,
+      'html': 'resume'
     }).appendTo('#bottom #summary')
 
     $('<article>', {
