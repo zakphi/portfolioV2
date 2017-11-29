@@ -73,7 +73,8 @@ $(() => {
 
     $('<a>', {
       'href': about.resume,
-      'html': 'resume'
+      'html': 'resume',
+      'target': '_blank'
     }).appendTo('#bottom #summary')
 
     $('<article>', {
