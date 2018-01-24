@@ -85,13 +85,12 @@ p{
 }
 
 #links{
-  display: block;
+  display: flex;
+  justify-content: space-around;
   margin: 10px 0;
 }
 
 #links a{
-  display: inline-block;
-  width: 50%;
   font-size: 1.15em;
 }
 
