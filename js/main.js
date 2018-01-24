@@ -166,11 +166,12 @@ $(() => {
         'target': '_blank'
       }).appendTo(`#bottom #workCont #${k} #links`)
 
-      $('<a>', {
+      let github = $('<a>', {
         'href': v.github,
         'html': 'github',
         'target': '_blank'
-      }).appendTo(`#bottom #workCont #${k} #links`)
+      })
+      v.github != '' ? github.appendTo(`#bottom #workCont #${k} #links`) : null
     })
   }
 
