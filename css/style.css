@@ -80,6 +80,10 @@ p{
   text-align: left;
 }
 
+#summary a{
+  font-size: 1.25em;
+}
+
 #workCont h4{
   margin-top: 5px;
 }
