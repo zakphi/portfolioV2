@@ -59,6 +59,24 @@
       "tech": [
         "css3", "react", "rails", "postgresql"
       ]
+    },
+    "afb": {
+      "title": "american friends of bucerius",
+      "summary": "American Friends of Bucerius is an independent, charitable 501(c)3 organization based in New York City, with a history rich in leadership and innovative thinking.",
+      "live": "http://buceriususa.org/",
+      "github": "",
+      "tech": [
+        "css3", "php", "wordpress"
+      ]
+    },
+    "radishlab": {
+      "title": "radish lab",
+      "summary": "Radish Lab is an award-winning, full-service interactive creative agency focused on design for social impact.",
+      "live": "https://radishlab.com/",
+      "github": "",
+      "tech": [
+        "css3", "php", "wordpress"
+      ]
     }
   },
   "social": {
