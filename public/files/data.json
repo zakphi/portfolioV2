@@ -23,8 +23,8 @@
       "git", "github"
     ]
   },
-  "work": {
-    "radishlab": {
+  "work": [
+    {
       "title": "radish lab",
       "summary": "Radish Lab is an award-winning, full-service interactive creative agency focused on design for social impact.",
       "live": "https://radishlab.com/",
@@ -33,7 +33,7 @@
         "css3", "php", "wordpress"
       ]
     },
-    "afb": {
+    {
       "title": "american friends of bucerius",
       "summary": "American Friends of Bucerius is an independent, charitable 501(c)3 organization based in New York City, with a history rich in leadership and innovative thinking.",
       "live": "http://buceriususa.org/",
@@ -42,7 +42,7 @@
         "css3", "php", "wordpress"
       ]
     },
-    "higherorlower": {
+    {
       "title": "higher or lower",
       "summary": "Higher or Lower is a simple card game where the user is displayed a card and has to choose whether the next card is higher or lower than the displayed card.",
       "live": "http://higherorlower.surge.sh/",
@@ -51,7 +51,7 @@
         "css3", "javascript", "jquery"
       ]
     },
-    "chucknorrisfacts": {
+    {
       "title": "chuck norris facts",
       "summary": "Chuck Norris Facts is a simple app that will generate a random fact about Chuck Norris.",
       "live": "https://chucknorrisfacts.herokuapp.com/",
@@ -60,7 +60,7 @@
         "css3", "javascript", "jquery", "express", "postgresql"
       ]
     },
-    "tvshowtrakr": {
+    {
       "title": "tvshowtrakr",
       "summary": "TVShowTrakr is a simple app for people to keep track of their favorite shows.",
       "live": "https://tvshowtrakr.herokuapp.com/",
@@ -69,7 +69,7 @@
         "css3", "react", "express", "postgresql"
       ]
     },
-    "bingetime": {
+    {
       "title": "bingetime",
       "summary": "BingeTime is a simple app that will allow people to search for a show and find out how long it will take to binge watch the show.",
       "live": "https://bingetime.herokuapp.com/",
@@ -78,7 +78,7 @@
         "css3", "react", "rails", "postgresql"
       ]
     }
-  },
+  ],
   "social": {
     "email": "philipkzak@gmail.com",
     "github": "https://github.com/zakphi",
