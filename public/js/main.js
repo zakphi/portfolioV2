@@ -51,7 +51,7 @@ $(() => {
     .then(res => res.json())
     .then(jsonRes => {
       about = jsonRes.about
-      work = jsonRes.work
+      work = jsonRes.work.reverse()
       skills = jsonRes.skills
       social = jsonRes.social
     })
