@@ -126,52 +126,53 @@ $(() => {
       'id': 'workCont'
     }).appendTo('#bottom #work')
 
-    $.each(work, (k, v) => {
+    work.map(project => {
+      let title = project.title.split(' ').join('')
       $('<div>', {
-        'id': k
+        'id': title
       }).appendTo('#bottom #workCont')
 
       $('<h4>', {
-        'html': v.title
-      }).appendTo(`#bottom #workCont #${k}`)
+        'html': project.title
+      }).appendTo(`#bottom #workCont #${title}`)
 
       $('<p>', {
-        'html': v.summary
-      }).appendTo(`#bottom #workCont #${k}`)
+        'html': project.summary
+      }).appendTo(`#bottom #workCont #${title}`)
 
       $('<div>', {
         'id': 'techCont'
-      }).appendTo(`#bottom #workCont #${k}`)
+      }).appendTo(`#bottom #workCont #${title}`)
 
       $('<h4>', {
         'html': 'tech'
-      }).appendTo(`#bottom #workCont #${k} #techCont`)
+      }).appendTo(`#bottom #workCont #${title} #techCont`)
 
       $('<ul>', {
-        'html': v.tech.map(v => {
-          let iconClass = v == 'express' ? `devicon-${v}-original` : `devicon-${v}-plain`
+        'html': project.tech.map(tech => {
+          let iconClass = tech == 'express' ? `devicon-${tech}-original` : `devicon-${tech}-plain`
           return $('<li>', {
-            'html': `${`<i class=${iconClass}></i>`} ${v}`
+            'html': `${`<i class=${iconClass}></i>`} ${tech}`
           })
         })
-      }).appendTo(`#bottom #workCont #${k} #techCont`)
+      }).appendTo(`#bottom #workCont #${title} #techCont`)
 
       $('<span>', {
         'id': 'links'
-      }).appendTo(`#bottom #workCont #${k} #techCont`)
+      }).appendTo(`#bottom #workCont #${title} #techCont`)
 
       $('<a>', {
-        'href': v.live,
+        'href': project.live,
         'html': 'live',
         'target': '_blank'
-      }).appendTo(`#bottom #workCont #${k} #links`)
+      }).appendTo(`#bottom #workCont #${title} #links`)
 
       let github = $('<a>', {
-        'href': v.github,
+        'href': project.github,
         'html': 'github',
         'target': '_blank'
       })
-      v.github != '' ? github.appendTo(`#bottom #workCont #${k} #links`) : null
+      project.github != '' ? github.appendTo(`#bottom #workCont #${title} #links`) : null
     })
   }
 
