@@ -60,12 +60,18 @@ h2{
 
 h3{
   font-size: 2em;
-  margin: 5px 0;
 }
 
 h4{
   font-size: 1.5em;
-  margin-bottom: 5px;
+}
+
+h5{
+  font-size: 1.25em;
+}
+
+h3, h4, h5{
+  margin: 5px 0;
 }
 
 #top p{
@@ -82,10 +88,6 @@ p{
 
 #summary a{
   font-size: 1.25em;
-}
-
-#workCont h4{
-  margin-top: 5px;
 }
 
 #links{
