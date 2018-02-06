@@ -144,7 +144,7 @@ $(() => {
         'id': 'techCont'
       }).appendTo(`#bottom #workCont #${title}`)
 
-      $('<h4>', {
+      $('<h5>', {
         'html': 'tech'
       }).appendTo(`#bottom #workCont #${title} #techCont`)
 
