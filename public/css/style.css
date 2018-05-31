@@ -88,6 +88,8 @@ p{
 
 #summary a{
   font-size: 1.25em;
+  display: block;
+  padding: 10px 0;
 }
 
 #links{
